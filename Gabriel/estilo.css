@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     line-height: 40px;
     border-radius: 5px;
-    margin-left:auto; 
+    margin:auto; 
     cursor: pointer;
 }
 .hoy{

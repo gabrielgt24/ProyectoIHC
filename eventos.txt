@@ -1,0 +1,33 @@
+EVENTOS
+    Pronto{
+        *21 de enero Stand up Comedy
+        *25 de enero Embajada Española en Biblioteca
+        *Torneo de Futbool canchas
+        *Torneo Geek club
+        *Prununciamiento del Movimiento Estudiantil
+        *Guamazoo shadowea
+    }
+    Tecnologia{
+        *22 de enero Taller de Machine Learning
+        *1 de Febrero Presentación del club de robotica
+        *Criptomonedas
+        *Taller de Forex
+        *Taller de Ethereum
+        *Taller de Docker
+    }
+    Pais y Economia{
+        *5 de Febrero Como sobrevivir con poco
+        *10 de Febrero Pais millonario pobre
+        *1 de marzo Exodo de Talento
+        *Crecimiento Economico en Venezuela
+        *Emprendimiento en Venezuela
+        *Taller de Finanzas 
+    }
+    Ferias de Comida{
+        *Gastronomia Española tu paella favorita
+        *Nuevo Local de Perros
+        *Apertura de Paramo Cafe
+        *Gastronomia Mexicana
+        *Foodtruck de Arepas
+        *All you can eat PIZZA
+    }
