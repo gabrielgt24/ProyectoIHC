@@ -7,6 +7,11 @@
        <link rel="stylesheet" href="estilo.css">
        <link href="https://file.myfontastic.com/gwiuakw9p7XhDxwacVmvK4/icons.css" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+
+     <link rel="stylesheet" type="text/css" href="evento/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="evento/css/estilos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link href="https://file.myfontastic.com/sHnuGCRNZDRAnfzjgDcxTc/icons.css" rel="stylesheet">
     </head>
     <body>
        <header class="header"> 
@@ -168,7 +173,9 @@
                     <p class="info_txt">El FoodTruck de empresas Polar se presentará ...</p>
                 </article>
                 <article class="info_columnas_ul">
-                     <img src="./Imagenes/Pepperoni-Pizza.jpg" alt="" class="info_img">
+                    <a href="#ventana1" data-toggle="modal">
+                      <img src="./Imagenes/Pepperoni-Pizza.jpg" alt="" class="info_img">
+                    </a>
                      <h2 class="info_titulo">All you can eat Pizza</h2>
                      <p class="info_txt">El FoodTruck Il Jet Estudio estará el dia ...</p>
                  </article>
@@ -184,8 +191,71 @@
                 <span class="icon-instagram"></span>
             </div>
       </div>   
+
+      <!-- Ventana -->
+      <div></div>
+      <div class="modal fade" id="ventana1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <!-- Header de la ventana emergente-->
+            <div class="modal-header">
+              <div class="container">
+                <h4 class="text-center"><b>All you can eat PIZZA</b></h4>
+              </div>
+              <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="Imagenes/close-circle.png" alt=""></a>
+            </div>
+
+            <!-- Contenido de la ventana emergente-->
+            <div class="modal-body">
+              <img src ="evento\img\Pepperoni-Pizza.jpg" class="img-fluid rounded" alt="Responsive image"/> </a>
+              <br><br>
+              <p class="text-justify">
+                <b>FECHA:</b> 25 de marzo de 2019
+              </p>
+              <p class="text-justify">
+                <b>HORA:</b> De 12 p.m. a 6:30 p.m.
+              </p>
+              <p class="text-justify">
+                <b>LUGAR:</b> Feria
+              </p>
+              <p class="text-justify">
+                <b>CATEGORÍA:</b> Gastronomía
+              </p>
+              <p class="text-justify">
+                <b>All you can eat PIZZA</b> vendrá a la UCAB, este será un stand que desplegará 5 mesones para que los ucabistas amantes de la pizza disfruten todo la pizza que puedan comer.
+              </p>
+
+              <center>
+              <button type="button" class="btn btn-outline-primary">
+                <div class="list_5">
+                        <div class="icon_redes">
+                            <span class="icon-facebook"></span>
+                            <span class="icon-twitter"></span>                          
+                            <span class="icon-instagrem"></span>
+                          <span class="icon-whatsapp"></span>
+                        </div>
+                    </div>  
+                  </button>
+                  </center>
+            </div>
+          </div>
+        </div>
+      </div>
        
        <script src="java.js"></script>
+
+      <script src="evento/JS/jquery-3.3.1.min.js"></script>
+      <script src="evento/JS/popper.min.js"></script>
+      <script src="evento/JS/bootstrap.min.js"></script>
+
+    <script> 
+        $('.close').click(function(){
+          
+            $('.modal').fadeOut(500,function(){});
+          
+         });
+    </script>
     </body>
 
 
