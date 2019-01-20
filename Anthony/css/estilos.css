@@ -6,10 +6,6 @@
     height: 100%;
 }
 
-/*.img-fluid{
-	border-image: 8px;
-}*/
-
 .container{
 	font-size: 
 }
@@ -52,4 +48,22 @@
     border-radius: 5px; 
     cursor: pointer;
     margin-left: auto;
+}
+
+.close {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.close img{
+	width: 40px;
+	height: 40px;
+  margin-top: -18px;
+  margin-left: -22px;
 }

@@ -1,3 +1,5 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Ventana emergente</title>
 	<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="https://file.myfontastic.com/sHnuGCRNZDRAnfzjgDcxTc/icons.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
@@ -26,7 +29,7 @@
 							<div class="container">
 								<h4 class="text-center"><b>All you can eat PIZZA</b></h4>
 							</div>
-							<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close-circle.png" alt=""></button>
 						</div>
 
 						<!-- Contenido de la ventana emergente-->
@@ -48,16 +51,19 @@
 							<p class="text-justify">
 								<b>All you can eat PIZZA</b> vendrá a la UCAB, este será un stand que desplegará 5 mesones para que los ucabistas amantes de la pizza disfruten todo la pizza que puedan comer.
 							</p>
-							<div class="list_5">
-            					<h4 class="redes_txt">Compartir:</h4>
-					            <div class="icon_redes">
-					                <span class="icon-facebook"></span>
-					                <span class="icon-twitter"></span>					                
-					                <span class="icon-instagrem"></span>
-					             	<span class="icon-whatsapp"></span>
-					            </div>
-					        </div>  
 
+							<center>
+							<button type="button" class="btn btn-outline-primary">
+								<div class="list_5">
+	            					<div class="icon_redes">
+						                <span class="icon-facebook"></span>
+						                <span class="icon-twitter"></span>					                
+						                <span class="icon-instagrem"></span>
+						             	<span class="icon-whatsapp"></span>
+						            </div>
+						        </div>  
+					        </button>
+					        </center>
 						</div>
 					</div>
 				</div>
@@ -68,6 +74,14 @@
 		<script src="JS/jquery-3.3.1.min.js"></script>
 		<script src="JS/popper.min.js"></script>
 		<script src="JS/bootstrap.min.js"></script>
+
+		<script> 
+				$('.close').click(function(){
+				  
+				    $('.modal').fadeOut(500,function(){});
+				  
+				 });
+		</script>
 
 </body>
 </html>
