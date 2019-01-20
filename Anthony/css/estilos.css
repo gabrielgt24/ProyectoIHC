@@ -10,6 +10,10 @@
 	border-image: 8px;
 }*/
 
+h4{
+	text-align: center;
+}
+
 .modal-body {
 	font-family: 'Lato', sans-serif;
 	padding: 14px;
@@ -18,10 +22,12 @@
     overflow-y: scroll;
 }
 .modal-header {
+	weight: 200px 200px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 50px;
+	font-weight: 100px;
+
     background-color: #00A637;
-    padding:16px 16px;
+    padding:50px 50px;
    /* color:#FBD900;*/
     border-bottom:2px dashed #000000;
 }
