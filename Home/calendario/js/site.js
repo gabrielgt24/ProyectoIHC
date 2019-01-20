@@ -3,12 +3,17 @@ var clndr = {};
 $( function() {
 
   // TATO - FORMATO DE LOS MESES USANDO MOMENT.JS
+  var lastMonth    = moment().add('month', -1).format('YYYY-MM');
   var currentMonth = moment().format('YYYY-MM');
   var nextMonth    = moment().add('month', 1).format('YYYY-MM');
 
   // TATO - AQUI VAN LOS EVENTOS ... PUDIERAMOS CONECTARLO A UNA DB Y SACAR TODA LA INFO
 
   var events = [
+    { date: lastMonth + '-' + '01',    title: '01 - Hiperinflacion y Consecuencias', location: 'Auditorio' },
+    { date: lastMonth + '-' + '07',    title: '07 - Curso de Fotografia', location: 'Grama' },
+    { date: lastMonth + '-' + '12',    title: '12 - Food Trucks', location: 'Cincuentenario' },
+    { date: lastMonth + '-' + '28',    title: '28 - Fiesta el Guamazo', location: 'La Lagunita' },
     { date: currentMonth + '-' + '10', title: '10 - Charla de Criptomoneadas', location: 'Aula Magna' },
     { date: currentMonth + '-' + '19', title: '19 - Ayuda a los Enfermos', location: 'Parque Social' },
     { date: currentMonth + '-' + '23', title: '23 - Conversatorio en Frances', location: 'CEICOSO - A554' },
@@ -21,7 +26,7 @@ $( function() {
   clndr = $('#full-clndr').clndr({
     template: $('#full-clndr-template').html(),
     events: events,
-    forceSixRows: true
+    forceSixRows: true,
   });
 
   $('#mini-clndr').clndr({
