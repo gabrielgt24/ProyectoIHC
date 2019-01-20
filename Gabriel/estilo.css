@@ -12,7 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     /*background:#1ec908;*/
     /*background:#fff207;*/
-    background: #06bbe8;
+    background: white;
     margin: 0;
 }
 
@@ -23,74 +23,97 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header{
-    height: 60px;
+    height: 60%;
 }
 
 .header .contenedor{
     display:flex;
     justify-content: space-between;
     position: fixed;
-    background: gray;
+    background: white;
+    border: black 1.5px solid;
     width: 100%;
+    height: 10%;
 }
 
-.logo, .icon-menu{
+.logo{
     margin: 5px;
+    width: 100px;
 }
 
-.icon-menu{
-    display: block;
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    background: #FBA919;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
-    margin-left:auto; 
-    cursor: pointer;
-}
+
+
 
 .nav{
-    position: absolute;
-    top:50px;
-    left:100%;
+    position: relative;
+    left:-16%;
     width:20%;
+    height: 20%;
+    border-radius: 5px;
     font-size: 2vw;
-    transition: 0.4s;
+    cursor: pointer;
+    height: 10%;
+    top: 2.5%;
+    display:block;
+    max-width: 100%;
 
 }
 
 .menu{
+    display: block;
     list-style: none;
-    padding: 0;
+    position: relative;
+
+    padding: 1%;
     margin: 0;
+
+    border-radius: 5px;
+
+}
+.menu__item{
+    display: block;
+    
+
 }
 
 .menu__link{
-    display: block;
-    padding: 20%;
-    background: #FBA919;
+
+    display:block;
+    /*height: 10%;*/
+    background: #1ec908;
+    text-align: center;
     text-decoration: none;
+    width: 100px;
+    border-radius: 7px;
+    font-size: 10px;
     color: #ffffff;
+    padding-block-end: 20%;
+    padding-block-start: 20%;
+    margin-block-end: 40%;
+    margin-block-start: 12%;
     z-index: 1000;
 }
 
 .menu__link:hover, .select{
     background: #ffffff;
-    color:#FBA919;
+    color:black;
 }
 
-.mostrar{
-    left: 80%;
-}
 
 .banner{
     width: 100%;
     height: 100%;
+    padding-block-start: 55px;
     position: relative;
     z-index: -200;
+}
+
+.info_imagen{
+    width: 100%;
+    height: 100%;
+    display:block;
+    max-width: 100%;
+    padding: 5%;
 }
 
 .banner .contenedor{
@@ -102,23 +125,70 @@ h1,h2,h3,h4,h5,h6{
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
     color: #ffffff;
-    text-align: center;
+    cursor: pointer;
+    
+    display:block;
 }
 .banner__img{
-    width:80%;
-    left:10%;
+    width:100%;
+    left:0%;
     position: relative;
     z-index: -1000;
     border-radius: 5px;
 }
 
+.hoy{
+   background: #06bbe8;
+
+   text-align: right;
+
+}
+
 .titulo_hoy{
     padding: 1%;
-    background: #1ec908;
+    background:white;
+    text-align: center;
+}
+.banner_titulo_1{
+
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-top: 210px;
+    font-size: 15px;
+    margin-left:3px;
+    margin-right: 5px;
+    width: 100%;
+    background: #06bbe8;
+    
+}
+.banner_titulo_2{
+
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-top: 218px;
+    width: 100%;
+    font-size: 31px;
+    background: #06bbe8;
+    margin-right: 30px;
+ 
+}
+.col_1{
+    text-align: left;
+    height: 60%;
+    margin-top: 50%;
+}
+.col_2{
+    text-align: right;
+    height: 40%;
+}
+
+.contenedor{
+    display:flex;
+
 }
 
 .info_hoy{
-    background:gray;
+    background:white;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -128,22 +198,38 @@ h1,h2,h3,h4,h5,h6{
 }
 .info_columnas{
     height: 100%;
-    background: #FBA919;
-    width: 30%;
+    background: #06bbe8;
+    width: 80%;
     display: inline-block;
     font-size: 2vw;
     border-radius: 5px;
+    margin-right: 12%;
+    margin-left: 12%;
+    cursor: pointer;
+}
+.info_columnas_ul{
     margin-right: 0%;
+    height: 100%;
+    background: #06bbe8;
+    width: 80%;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius: 5px;
+    margin-left: 12%;
+    margin-right: 12%;
+    cursor: pointer;
 }
 
 .info_titulo{
     /*padding: 4%;*/
-    font-size: 2vw;
-le 
+    font-size:15px;
+    text-align: center;
+    
 }
 
 .info_txt{
-    font-size: 2vw;
+    font-size: 10px;
+    text-align: center;
 }
 
 .redes_txt{
@@ -159,10 +245,18 @@ le
     height: 30px;
     font-size: 30px;
     background: rgb(0, 0, 0);
-    color:#1ec908;
+    color:#06bbe8;
     text-align: center;
     line-height: 40px;
     border-radius: 5px;
     margin:auto; 
     cursor: pointer;
+}
+.hoy{
+    color: black;
+    text-align: left;
+    position: absolute;
+    font-size: 2vw;
+    top:180%;
+ 
 }
