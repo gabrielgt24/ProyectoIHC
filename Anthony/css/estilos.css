@@ -36,8 +36,8 @@
 
 .icon-whatsapp,.icon-youtube-play,.icon-facebook,.icon-twitter,.icon-instagrem{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 30px;
     background: rgb(0, 0, 0);
     color: #00AFEF;
@@ -45,4 +45,5 @@
     line-height: 40px;
     border-radius: 5px; 
     cursor: pointer;
+    margin-left: auto;
 }
